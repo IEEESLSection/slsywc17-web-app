@@ -1,0 +1,67 @@
+//=================================
+//         Sidebar CSS           //
+//=================================
+
+.sidebar {
+  &__item {
+    h4 {
+      color: $color-body;
+      font-size: 20px;
+      margin: 30px 0;
+    }
+  }
+  &__search {
+    position: relative;
+    &--button {
+      position: absolute;
+      top: 0;
+      right: 12px;
+      height: 40px;
+      line-height: 40px;
+      background: none;
+      color: #b4b4b4;
+      padding: 0;
+      border: none;
+    }
+  }
+  .category {
+    li {
+      font-size: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px dotted #ddd;
+      margin-bottom: 10px;
+      a {
+        color: $color-body;
+      }
+      span {
+        color: $color-secondary;
+        margin-left: 5px;
+      }
+    }
+  }
+  .popular {
+    li {
+      display: inline-block;
+      a {
+        color: $color-body;
+        font-size: 15px;
+      }
+      .date {
+        display: block;
+        font-size: 13px;
+      }
+    }
+  }
+  .tags {
+    li {
+      display: inline-block;
+      padding: 0 5px;
+      a {
+        display: block;
+        color: $color-body;
+        font-size: 14px;
+        padding: 10px 10px 10px 0;
+      }
+    }
+  }
+}

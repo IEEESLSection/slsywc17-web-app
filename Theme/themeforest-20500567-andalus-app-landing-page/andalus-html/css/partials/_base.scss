@@ -1,0 +1,267 @@
+@import "partials/config";
+
+//=================================
+//         Base Styles           //
+//=================================
+
+// =====
+// Rest
+// =====
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+ul,
+li {
+  list-style: none;
+}
+
+select { width: 100%; }
+input:focus { outline: 0; }
+
+// ===============
+// General Classes
+// ===============
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body {
+  font-size: $base-font-size;
+  line-height: ($base-line-height/$base-font-size);
+  font-family: $base-font-family;
+  color: $color-body;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+// ===============
+// General Classes
+// ===============
+
+.button {
+  display: inline-block;
+  background: $color-secondary;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $color-primary, $color-secondary);
+  background: linear-gradient(to right, $color-primary, $color-secondary);
+  color: #fff;
+  height: 46px;
+  line-height: 46px;
+  font-size: rem(14px);
+  text-transform: uppercase;
+  padding: 0 30px;
+  border: 0;
+  border-radius: 44px;
+  @include transition(0.3s);
+  &:hover {
+    background: $color-secondary;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color-secondary, $color-primary);
+    background: linear-gradient(to right, $color-secondary, $color-primary);
+    color: #fff;
+    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.button-action {
+  display: inline-block;
+  color: $color-secondary;
+  height: 46px;
+  line-height: 45px;
+  font-size: rem(14px);
+  text-transform: uppercase;
+  padding: 0 30px;
+  border: 1px solid $color-secondary;
+  border-radius: 44px;
+  @include transition(0.3s);
+  &:hover {
+    background: $color-secondary;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color-secondary, $color-primary);
+    background: linear-gradient(to right, $color-secondary, $color-primary);
+    color: #fff;
+    border: none;
+    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.has-gradient {
+  background: $color-secondary;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $color-primary, $color-secondary);
+  background: linear-gradient(to right, $color-primary, $color-secondary);
+}
+
+.headline {
+  font-size: 14px;
+  margin-bottom: 60px;
+  h3 {
+    position: relative;
+    color: $color-primary;
+    font-size: rem(38px);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      width: 50px;
+      height: 5px;
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      background: $color-primary;
+      transform: translateX(-50%);
+      @include transition(0.2s);
+    }
+  }
+}
+
+section:hover .headline h3::after {
+  width: 90px;
+}
+
+.f_facebook {
+  background: #3B5998;
+}
+.f_twitter {
+  background: #1A90D9;
+}
+.f_google {
+  background: #FF5252;
+}
+.f_linkedin {
+  background: #0077B5;
+}
+.f_youtube {
+  background: #D32322;
+}
+.f_pintrest {
+  background: #bd081c;
+}
+.tm { color: $color-muted; }
+
+.p0 { padding: 0; }
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: $color-secondary
+}

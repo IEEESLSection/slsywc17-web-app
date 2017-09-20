@@ -1,0 +1,176 @@
+//=================================
+//      Project Starts Here      //
+//=================================
+
+// =============
+// Color Palette
+// =============
+
+$color-primary : #514A9D;
+$color-secondary: #24C6DC;
+$color-third: #ddd;
+$color-body: #333;
+$color-muted: #b4b4b4;
+$color-brand--facebook: #3b5998;
+$color-brand--twitter: #55acee;
+$color-brand--instagram: #e1306c;
+$color-brand--googleplus: #dc4e41;
+$color-brand--youtube: #cd201f;
+$color-brand--linkedin: #0077b5;
+$color-brand--behance: #1769ff;
+$color-brand--pintrest: #bd081c;
+
+// =====
+// Fonts
+// =====
+
+$base-font-family: 'Montserrat', sans-serif;
+
+// ==========
+// Font Sizes
+// ==========
+
+$font-small: rem(14px);
+$font-big: rem(40px);
+$font-extra-big: rem(64px);
+
+// ====
+// Text
+// ====
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$letter-space: 1px;
+
+// =============
+//  Padding   //
+// =============
+
+$padding-one: 55px;
+$padding-two: 45px;
+$padding-three: 35px;
+
+// =============
+//   Margin   //
+// =============
+
+$margin-one: 55px;
+$margin-two: 45px;
+$margin-three: 35px;
+
+// =============
+// Border Radius
+// =============
+
+$br: 2px;
+
+
+
+//=================================
+//  Mixins,Functions AND Extends  //
+//=================================
+
+
+// =========================
+// Claculate em & rem values
+// =========================
+
+@function em($target, $context: $base-font-size) {
+  @return ($target / $context) * 1em;
+}
+
+@function rem($target, $context: $base-font-size) {
+  @return ($target / $context) * 1rem;
+}
+
+// ======
+// Mixins
+// ======
+
+// Mixin uses to clear floats inside parent element
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Mixin uses to horizontally center any div with specific width
+@mixin width-center($width) {
+  width: $width;
+  margin: 0 auto;
+}
+
+// Mixin uses postion property to vertically center element (will not work with absolute or fixed position)
+@mixin vertical-position {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+// Mixin uses to vertically center element (will not work in grid system)
+@mixin vertical-table {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// Mixin to include light font-weight
+@mixin font-light {
+  font-family: $base-font-family;
+  font-weight: 300;
+}
+
+// Mixin to include bold font-weight
+@mixin font-bold {
+  font-family: $base-font-family;
+  font-weight: 700;
+}
+
+// Mixin for nedded css for social icons
+@mixin social-icons($s-wh, $s-background, $s-font--color, $s-radius) {
+  display: block;
+  background: $s-background;
+  color: $s-font--color;
+  width: $s-wh;
+  height: $s-wh;
+  line-height: $s-wh;
+  border-radius: $s-radius;
+}
+
+// border generaly used in project
+@mixin base-border {
+  border: 1px solid $color-primary;
+}
+
+// transition generaly used in project
+@mixin transition ($t_time) {
+  transition: all $t_time ease-in-out;
+}
+
+// generate css triangle only enter size color and direction
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+  border: inset $triangle-size;
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  @if ($triangle-direction == bottom) {
+    border-color: $triangle-color transparent transparent transparent;
+    border-top-style: solid;
+  }
+  @if ($triangle-direction == top) {
+    border-color: transparent transparent $triangle-color transparent;
+    border-bottom-style: solid;
+  }
+  @if ($triangle-direction == right) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+  @if ($triangle-direction == left) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}
