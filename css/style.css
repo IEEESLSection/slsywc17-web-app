@@ -423,12 +423,12 @@ input.form-control {
 .hero {
   padding: 180px 0 60px; }
   .hero__info {
-    max-width: 500px;
+    max-width: 600px;
     color: white;
     padding-top: 80px; }
     .hero__info h2 {
-      font-size: 45px;
-      font-weight: 700;
+      font-size: 40px;
+      font-weight: 400;
       text-transform: uppercase;
       line-height: 55px; }
     .hero__info p {
@@ -459,6 +459,8 @@ input.form-control {
       letter-spacing: 1px;
       margin-top: 6px; }
     .hero__download a h5 {
+      display: inline-block;
+      margin-top: 18px;
       font-size: 16px;
       font-weight: 700; }
     .hero__download a:hover {
