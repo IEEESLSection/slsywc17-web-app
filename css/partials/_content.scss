@@ -221,6 +221,15 @@
 
 // Features Section
 
+#features {
+  p {
+    display: inline-block;
+    max-width: 70%;
+    font-size: 16px;
+    color: #999999;
+  }
+}
+
 .feature {
   padding: 30px;
   border-radius: $br;
