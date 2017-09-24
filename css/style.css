@@ -384,7 +384,7 @@ input.form-control {
 .hero {
   padding: 180px 0 60px; }
   .hero__info {
-    max-width: 500px;
+    max-width: 600px;
     color: white;
     padding-top: 80px; }
     .hero__info h2 {
@@ -648,11 +648,11 @@ input.form-control {
     .pages .headline h3::after {
       background-color: #fff; }
 
-#features p {
+#features > div > p {
   display: inline-block;
-  max-width: 70%;
-  font-size: 16px;
-  color: #999999; }
+  max-width: 65%;
+  font-size: 20px;
+  line-height: 30px; }
 
 .feature {
   padding: 30px;
@@ -762,26 +762,27 @@ input.form-control {
     bottom: -60px;
     right: 0;
     left: 0;
-    height: 140px;
+    height: 100px;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     opacity: 0.9;
     transition: all 0.3s ease-in-out; }
     .team__member--info h4 {
-      font-size: 1.5625rem;
-      line-height: 20px; }
-    .team__member--info h6 {
       font-size: 0.8125rem;
+      line-height: 0px;
+      margin-bottom: 4px; }
+    .team__member--info h6 {
+      font-size: 0.75rem;
       font-style: italic;
-      margin-bottom: 21px; }
+      margin-bottom: 15px; }
   .team__member--social li {
     display: inline-block;
     margin: 0 2px; }
     .team__member--social li a {
       display: block;
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
       line-height: 28px;
       color: #fff;
       font-size: 0.875rem;
@@ -1094,7 +1095,7 @@ input.form-control {
 .clients {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1); }
   .clients img {
-    max-height: 30px;
+    max-height: 60px;
     margin: 30px auto; }
 
 .subscribe__form {
