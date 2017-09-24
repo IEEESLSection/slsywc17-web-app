@@ -648,7 +648,7 @@ input.form-control {
     .pages .headline h3::after {
       background-color: #fff; }
 
-#features > div > p {
+#about > div > p {
   display: inline-block;
   max-width: 65%;
   font-size: 20px;
