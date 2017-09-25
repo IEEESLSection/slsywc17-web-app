@@ -289,6 +289,27 @@
   }
 }
 
+// Countdown section
+
+#countdown{
+  .container {
+    width: 650px;
+    margin: 0 auto;
+  }
+}
+
+// Venue section
+
+#venue{
+  background-color: #f6f6f6;
+}
+
+// Program
+
+#program{
+  background-color: #f6f6f6;
+}
+
 // Gallery Section
 
 #gallery {
@@ -299,7 +320,7 @@
     margin-right: auto;
   }
   &__slider::after {
-    content: url("../img/gallery.png");
+    content: url("../../img/gallery.png");
     position: absolute;
     top: 50%;
     left: 50%;
@@ -310,7 +331,6 @@
 // Testimonial Section
 
 .testimon {
-  background-color: #f6f6f6;
   &__item {
     max-width: 850px;
     text-align: center;
@@ -563,6 +583,10 @@
 }
 
 // Blogs Section
+
+#blogs{
+  background-color: #f6f6f6;
+}
 
 .blog {
   &__item {
