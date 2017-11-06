@@ -302,6 +302,19 @@
 
 #venue{
   background-color: #f6f6f6;
+  h4 {
+    color: $color-primary;
+    font-size: rem(22px);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 16px;
+  }
+  h5 {
+    color: $color-primary;
+    font-size: rem(17px);
+    font-weight: 600;
+    padding-top: 16px;
+  }
 }
 
 // Program

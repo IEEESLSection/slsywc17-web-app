@@ -210,11 +210,10 @@ a:active {
   background: -webkit-linear-gradient(to right, $color-primary, $color-secondary);
   background: linear-gradient(to right, $color-primary, $color-secondary);
   color: #fff;
-  height: 46px;
-  line-height: 46px;
+  height: 30px;
+  line-height: 30px;
   font-size: rem(14px);
-  text-transform: uppercase;
-  padding: 0 30px;
+  padding: 0 20px;
   border: 0;
   border-radius: 44px;
   @include transition(0.3s);
@@ -223,28 +222,6 @@ a:active {
     background: -webkit-linear-gradient(to right, $color-secondary, $color-primary);
     background: linear-gradient(to right, $color-secondary, $color-primary);
     color: #fff;
-    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
-    transition: all 0.3s ease-in-out;
-  }
-}
-.button-small-action {
-  display: inline-block;
-  color: $color-secondary;
-  height: 46px;
-  line-height: 45px;
-  font-size: rem(14px);
-  text-transform: uppercase;
-  padding: 0 30px;
-  border: 1px solid $color-secondary;
-  border-radius: 44px;
-  @include transition(0.3s);
-  &:hover {
-    background: $color-secondary;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, $color-secondary, $color-primary);
-    background: linear-gradient(to right, $color-secondary, $color-primary);
-    color: #fff;
-    border: none;
     box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-3px);
     transition: all 0.3s ease-in-out;
