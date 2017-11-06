@@ -117,6 +117,7 @@ $(document).ready(function() {
 /*   Owl Carousel For Team Members                            */
 /* ========================================================== */
 
+var owl = $('.owl-carousel');
 $("#team__slider").owlCarousel({
 	autoplay: true,
 	autoplayTimeout: 5000,
@@ -126,6 +127,8 @@ $("#team__slider").owlCarousel({
 	pagination: false,
 	dots: true,
 	responsiveClass: true,
+    smartSpeed: 1000,
+	slideBy: 1,
 	responsive: {
 			0: {
 					items: 1,
@@ -137,6 +140,14 @@ $("#team__slider").owlCarousel({
 					items: 7,
 			}
 	}
+});
+$("#team__slider").on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
 });
 
 /* ========================================================== */
