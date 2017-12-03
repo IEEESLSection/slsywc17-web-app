@@ -1188,9 +1188,10 @@ input.form-control {
     border-color: #514A9D; }
 
 #sb {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  padding-bottom: 30px; }
   #sb h3 {
-    padding-top: 5px; }
+    padding-top: 15px; }
   #sb h4 {
     color: #514A9D;
     font-size: 1.375rem;
@@ -1204,9 +1205,10 @@ input.form-control {
     padding-top: 16px; }
 
 #yp {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  padding-bottom: 30px; }
   #yp h3 {
-    padding-top: 5px; }
+    padding-top: 15px; }
   #yp h4 {
     color: #514A9D;
     font-size: 1.375rem;
@@ -1220,9 +1222,10 @@ input.form-control {
     padding-top: 16px; }
 
 #wie {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  padding-bottom: 30px; }
   #wie h3 {
-    padding-top: 5px; }
+    padding-top: 15px; }
   #wie h4 {
     color: #514A9D;
     font-size: 1.375rem;
@@ -1236,9 +1239,10 @@ input.form-control {
     padding-top: 16px; }
 
 #retention {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  padding-bottom: 30px; }
   #retention h3 {
-    padding-top: 5px; }
+    padding-top: 15px; }
   #retention h4 {
     color: #514A9D;
     font-size: 1.375rem;
@@ -1262,6 +1266,8 @@ input.form-control {
   font-size: 1.0625rem;
   font-weight: 600;
   padding-top: 16px; }
+#terms a {
+  color: white; }
 
 .award-padding {
   padding-top: 3.75rem; }
