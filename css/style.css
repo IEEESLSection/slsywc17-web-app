@@ -1189,6 +1189,8 @@ input.form-control {
 
 #sb {
   background-color: #f6f6f6; }
+  #sb h3 {
+    padding-top: 5px; }
   #sb h4 {
     color: #514A9D;
     font-size: 1.375rem;
@@ -1203,6 +1205,8 @@ input.form-control {
 
 #yp {
   background-color: #f6f6f6; }
+  #yp h3 {
+    padding-top: 5px; }
   #yp h4 {
     color: #514A9D;
     font-size: 1.375rem;
@@ -1217,6 +1221,8 @@ input.form-control {
 
 #wie {
   background-color: #f6f6f6; }
+  #wie h3 {
+    padding-top: 5px; }
   #wie h4 {
     color: #514A9D;
     font-size: 1.375rem;
@@ -1231,6 +1237,8 @@ input.form-control {
 
 #retention {
   background-color: #f6f6f6; }
+  #retention h3 {
+    padding-top: 5px; }
   #retention h4 {
     color: #514A9D;
     font-size: 1.375rem;
