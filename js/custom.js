@@ -141,14 +141,6 @@ $("#team__slider").owlCarousel({
 			}
 	}
 });
-$("#team__slider").on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY>0) {
-        owl.trigger('next.owl');
-    } else {
-        owl.trigger('prev.owl');
-    }
-    e.preventDefault();
-});
 
 /* ========================================================== */
 /*   Owl Carousel For Testimonial                             */
