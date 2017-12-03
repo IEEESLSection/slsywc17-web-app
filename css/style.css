@@ -1187,6 +1187,77 @@ input.form-control {
     box-shadow: none;
     border-color: #514A9D; }
 
+#sb {
+  background-color: #f6f6f6; }
+  #sb h4 {
+    color: #514A9D;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 16px; }
+  #sb h5 {
+    color: #514A9D;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    padding-top: 16px; }
+
+#yp {
+  background-color: #f6f6f6; }
+  #yp h4 {
+    color: #514A9D;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 16px; }
+  #yp h5 {
+    color: #514A9D;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    padding-top: 16px; }
+
+#wie {
+  background-color: #f6f6f6; }
+  #wie h4 {
+    color: #514A9D;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 16px; }
+  #wie h5 {
+    color: #514A9D;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    padding-top: 16px; }
+
+#retention {
+  background-color: #f6f6f6; }
+  #retention h4 {
+    color: #514A9D;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 16px; }
+  #retention h5 {
+    color: #514A9D;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    padding-top: 16px; }
+
+#terms h4 {
+  color: #514A9D;
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 16px; }
+#terms h5 {
+  color: #514A9D;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  padding-top: 16px; }
+
+.award-padding {
+  padding-top: 3.75rem; }
+
 #footer {
   height: 80px;
   background: #fff;
