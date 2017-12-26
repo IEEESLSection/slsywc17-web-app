@@ -745,6 +745,14 @@ input.form-control {
     font-weight: 600;
     padding-top: 16px; }
 
+#program h4 {
+  color: #514A9D;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  margin-top: 10px; }
+#program p {
+  margin-top: 10px; }
+
 #gallery .owl-carousel .owl-item img {
   display: block;
   width: auto;
